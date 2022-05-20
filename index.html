@@ -2,243 +2,360 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Dicas de como não cair em ataques phishing" />
-  <meta name="author" content="André Garcia Fattore" />
-  <meta name="keywords" content="Dominos, phishing, teste, segurança da informação," />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="refresh" contenteditable="30" />
-  <script src="https://kit.fontawesome.com/8402af2abd.js" crossorigin="anonymous"></script>
-  <title>Teste de Phishing Domino's</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Dicas de como não cair em ataques phishing" />
+    <meta name="author" content="André Garcia Fattore" />
+    <meta name="keywords" content="Dominos, phishing, teste, segurança da informação," />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" contenteditable="30" />
+    <script src="https://kit.fontawesome.com/8402af2abd.js" crossorigin="anonymous"></script>
+    <title>Teste de Phishing Domino's</title>
 
 
-  <!-- CSS -->
-  <style>
-    /* Reset CSS */
-    
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <!-- CSS -->
+    <style>
+        /* Reset CSS */
 
-body {
-    font-family: 'Poppins', sans-serif;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/*Cabeçalho*/
-.navbar {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
 
-nav {
-    flex: 1;
-    text-align: right;
-}
+        /*Cabeçalho*/
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
 
-nav ul {
-    display: inline-block;
-    list-style-type: none;
-}
+        nav {
+            flex: 1;
+            text-align: right;
+        }
 
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
+        nav ul {
+            display: inline-block;
+            list-style-type: none;
+        }
 
-a {
-    text-decoration: none;
-    color: #555;
-}
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
 
-p {
-    color: #555;
-}
+        a {
+            text-decoration: none;
+            color: #555;
+        }
 
-.container {
-    max-width: 1300px;
-    height: 100vh;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
+        p {
+            color: #555;
+        }
 
-.row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+        .container {
+            max-width: 1300px;
+            height: 100vh;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
 
-.col-2 {
-    flex-basis: 50%;
-    min-width: 300px;
-}
-.col-2 p{
-    text-align: justify;
-    color: #000;
-}
+        .row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
 
-.col-2 img {
+        .col-2 {
+            flex-basis: 50%;
+            min-width: 300px;
+        }
 
-    max-width: 100%;
-    height: 510px;
-    padding: 50px 0;
-}
+        .col-2 p {
+            text-align: justify;
+            color: #000;
+        }
 
-.col-2 h1 {
-    font-size: 40px;
-    line-height: 60px;
-    margin: 25px 0;
-}
+        .col-2 img {
 
-.btn {
-    display: inline-block;
-    background: #ff2428;
-    color: #fff;
-    padding: 8px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
-    transition: background 0.5s;
-}
+            max-width: 100%;
+            height: 510px;
+            padding: 50px 0;
+        }
 
-.btn:hover {
-    background: #563131;
-}
+        .col-2 h1 {
+            font-size: 40px;
+            line-height: 60px;
+            margin: 25px 0;
+        }
 
-.header {
-    background: radial-gradient(#fff, #dce4f8);
-}
+        .btn {
+            display: inline-block;
+            background: #ff2428;
+            color: #fff;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 30px;
+            transition: background 0.5s;
+        }
 
-.header .row {
-    margin-top: 0px;
-}
+        #link a {
 
-/*Conteúdo*/
+            transition-delay: 0.5s;
 
+        }
 
-.conteudo {
-    margin: 70px 0;
-}
+        .btn:hover {
+            background: #563131;
+        }
 
-.small-container {
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
+        .header {
+            background: radial-gradient(#fff, #dce4f8);
+        }
 
-.col-2-1 {
-    flex-basis: 45%;
-    min-width: 300px;
-}
-.col-2-1 p{
-    text-align: justify;
-    color: #000;
-}
+        .header .row {
+            margin-top: 0px;
+        }
 
-.col-2-1 img {
-
-    width: 450px;
-    height: 400px;
-    padding: 50px 0;
-    
-}
-
-.col-2-1 h2 {
-    font-size: 20px;
-    line-height: 60px;
-    margin: 25px 0;
-}
+        /*Conteúdo*/
 
 
-  </style>
+        .conteudo {
+            margin: 70px 0;
+        }
+
+        .dicas {
+
+            margin-top: 90px;
+            font-size: 40px;
+
+        }
+
+        .small-container {
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .col-2-1 {
+            flex-basis: 45%;
+            min-width: 300px;
+        }
+
+        .col-2-1 p {
+            text-align: justify;
+            color: #000;
+        }
+
+        .col-2-1 img {
+
+            width: 450px;
+            height: 400px;
+            padding: 50px 0;
+
+        }
+
+        .col-2-1 h2 {
+            font-size: 20px;
+            line-height: 60px;
+            margin: 25px 0;
+        }
+
+        /*Dúvidas*/
+        .offer {
+            background: radial-gradient(#fff, #dce4f8);
+            margin-top: 80px;
+            padding: 30px 0;
+        }
+
+        .col-2 .offer-img {
+            padding: 50px;
+            height: 400px;
+        }
+
+        small {
+            color: #555;
+        }
+
+
+        /*Footer*/
+
+        .rodape {
+            width: 100%;
+            height: 10vh;
+            float: left;
+            background-color: #000000;
+            padding: 25px 8%;
+        }
+
+        .rodape p {
+            color: #fff;
+        }
+    </style>
+
+
 
 </head>
 
 <body>
 
-  <!-- Cabeçalho -->
-  <div class="header">
-    <div class="container">
-        <div class="navbar">
-            <div class="logo"> <a href="index.html"><img src="https://upload.wikimedia.org/wikipedia/de/thumb/5/53/Domino%E2%80%99s_Pizza_2012_logo.svg/1200px-Domino%E2%80%99s_Pizza_2012_logo.svg.png" width="90" height="90"></a></div>
-            <nav>
-                <ul id="MenuItems">
-                  
-                </ul>
-            </nav>
-           
-        </div>
-        <div class="row">
-            <div class="col-2">
-                <h1>Segurança Informa: Você foi Fisgado! <br> Mantenha a calma, isso é apenas um teste!<br> Mas poderia ser real...</h1>
-                <p> Phishing é uma técnica de engenharia social usada para enganar usuários <br> e obter informações confidenciais, como nome de usuário, senhas e <br> outros dados pessoais</p>
-                <a href="" class="btn">Veja Dicas de Como não ser Fisgado Novamente &#8594;</a>
+    <!-- Cabeçalho -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo"> <a href="index.html"><img
+                            src="https://upload.wikimedia.org/wikipedia/de/thumb/5/53/Domino%E2%80%99s_Pizza_2012_logo.svg/1200px-Domino%E2%80%99s_Pizza_2012_logo.svg.png"
+                            width="90" height="90"></a></div>
+                <nav>
+
+                </nav>
+
             </div>
-            <div class="col-2">
-                <img src="https://www.lumiun.com/blog/wp-content/webp-express/webp-images/uploads/2017/06/phishing-roubo-de-dados1-800x400.png.webp">
+            <div class="row">
+                <div class="col-2">
+                    <h1>SI Informa: Você foi Fisgado! <br> Mantenha a calma, isso é apenas um teste,<br> Mas poderia ser
+                        real...</h1>
+                    <p>Essa página faz parte da Campanha de Conscientização do Departamento <br> de Segurança, com
+                        objetivo
+                        de alertar os colaboradores sobre os<br> ataques de engenharia social, neste caso:
+                        phishing.<br><b>Não conte a ninguem sobre esse
+                            e-mail, O Sucesso dessa campanha<br> depende da colaboração de todos!</b> </p>
+                    <a href="#link" class="btn">Veja as dicas para identificar se é phishing ou não &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img
+                        src="https://www.lumiun.com/blog/wp-content/webp-express/webp-images/uploads/2017/06/phishing-roubo-de-dados1-800x400.png.webp">
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!--Conteudo-->
-<div class="conteudo">
-    <div class="small-container">
-        <div class="row">
-            <div class="col-2-1">
-                <h2>O que é Phishing?</h2>
-                <p> Phishing é um tipo de fraude na Internet que visa obter as credenciais de um usuário enganando-o. Inclui roubo de senhas, números de cartão de crédito, detalhes de contas bancárias e outras informações confidenciais.</p>
-               
+    <!--Conteudo-->
+    <div class="conteudo">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2-1">
+                    <h2>O que é Phishing?</h2>
+                    <p> Phishing é um tipo de fraude na Internet que visa obter as credenciais de um usuário
+                        enganando-o. Inclui roubo de senhas, números de cartão de crédito, detalhes de contas bancárias
+                        e outras informações confidenciais. Geralmente, as vítimas recebem uma mensagem com uma
+                        solicitação urgente, que pode conter links e anexos maliciosos. Outra característica dos golpes
+                        de phishing é que estes e-mails sempre têm como remetentes pessoas ou empresas que aparentemente
+                        são confiáveis, como, por exemplo, o gerente do seu banco, a Apple, a Microsoft ou a Netflix.
+                    </p>
+
+                </div>
+                <div class="col-2-1">
+                    <img src="https://www.cache2net2.com//Repositorio/7215/Publicacoes/249997/oqueephishing.jpg">
+                </div>
             </div>
-            <div class="col-2-1">
-                <img src="https://www.cache2net2.com//Repositorio/7215/Publicacoes/249997/oqueephishing.jpg">
+
+            <h1 id="link" class="dicas">Dicas para identificar se é phishing ou não:</h1>
+
+
+            <div class="row">
+                <div class="col-2-1">
+                    <h2>Mensagens alarmantes</h2>
+                    <p>Tenha cuidado com mensagens que solicitam ações imediatas. Nenhuma entidade governamental ou
+                        corporativa dará a você somente uma chance de não perder tudo. Além disso, cuidado com ofertas
+                        irrecusáveis de produtos, serviços, viagens, etc.</p>
+
+                </div>
+                <div class="col-2-1">
+                    <img src="https://www.oficinadanet.com.br/imagens/post/26821/virus-pc-notebook.png">
+                </div>
             </div>
+
+            <div class="row">
+                <div class="col-2-1">
+                    <h2>Conteúdo da Mensagem</h2>
+                    <p>Cuidado com e-mails que se tratam de problemas de faturamento, confirmação de dados, mudança de
+                        senha, acessos não
+                        autorizados a sua conta, cobranças governamentais, pedidos
+                        de ajudas, alertas do
+                        banco, prêmios, negocios urgentes, entre outros. Esses temas são os mais comuns em e-mais
+                        phishing! Além disso tenha cuidado com e-mails que contenham links e anexos.</p>
+
+                </div>
+                <div class="col-2-1">
+                    <img
+                        src="https://mundoconectado.com.br/uploads/chamadas/phishin-como-proteger-sua-empresa-de-ataquesjpg.jpg">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2-1">
+                    <h2>Endereços de e-mail suspeitos</h2>
+                    <p>Verifique sempre o domínio do e-mail de quem enviou a mensagem. A maior parte das empresas
+                        possuem e-mails com domínio próprio, como no caso da Domino's: @dominos.com.br <br> Fique atento
+                        a
+                        mensagens "oficiais" recebidas de provedores como gmail, outlook, yahoo, entre outros.</p>
+
+                </div>
+                <div class="col-2-1">
+                    <img
+                        src="https://www.weblink.com.br/blog/wp-content/uploads/2020/04/Como-Criar-Email-Com-Dominio-Proprio-no-Gmail-Passo-a-Passo.png">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2-1">
+                    <h2>Erros ortográficos e gramaticais</h2>
+                    <p>Verifique sempre se a mensagem possui muitos erros gramaticais e ortográficos. Empresas e bancos
+                        não enviam e-mails com escrita confusa e errada. O excesso de erros pode significar incluive que
+                        o e-mail foi escrito e traduzido de outro idioma.</p>
+
+                </div>
+                <div class="col-2-1">
+                    <img
+                        src="https://media.istockphoto.com/vectors/tiny-college-persons-correcting-mistakes-in-text-or-manuscript-vector-id1363971322?k=20&m=1363971322&s=612x612&w=0&h=DQ8uWRZZFhkc91OnosmiRBNJCHsumdwdI_r4ufRe5Ek=">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2-1">
+                    <h2>Links</h2>
+                    <p>Tome cuidado com links extensos, confusos e sem domínio. Sites oficiais de empresas, lojas e
+                        marcas possem domínio registrado para facilitar o acesso, como por exemplo o site da Domino's:
+                        www.dominos.com.br</p>
+
+                </div>
+                <div class="col-2-1">
+                    <img src="http://www.scurra.com.br/blog/wp-content/uploads/2015/06/internet.jpg">
+                </div>
+            </div>
+
+
         </div>
-
-        <div class="row">
-            <div class="col-2-1">
-                <h2>Como o Phishing Funciona? </h2>
-                <p>O foco dos golpes de phishing é a vulnerabilidade humana. Isto é o que chamamos de fator humano. Nos casos de ataques de phishing via e-mail, geralmente, as vítimas recebem uma mensagem com uma solicitação urgente, que pode conter links e anexos maliciosos. Outra característica dos golpes de phishing é que estes e-mails sempre têm como remetentes pessoas ou empresas que aparentemente são confiáveis, como, por exemplo, o gerente do seu banco, a Apple, a Microsoft ou a Netflix.</p>
-               
-            </div>
-            <div class="col-2-1">
-                <img src="https://cdn.pixabay.com/photo/2018/05/11/12/59/phishing-3390518_960_720.jpg">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-2-1">
-                <h2>E-mails Phishing</h2>
-                <p>Segundo uma pesquisa realizada em novembro de 2020, pela empresa de segurança Avast, 71% dos 2.888 entrevistados que se deparam com a tentatica de phishing receberam algum conteudo por email. Desses, 46% foram vítimas.</p>
-               
-            </div>
-            <div class="col-2-1">
-                <img src="https://vpnoverview.com/wp-content/uploads/what-is-phishing-featured-image-big.png">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-2-1">
-                <h2>O Brasil é líder mundial em golpes de phishing</h2>
-                <p>Um estudo públicada pela empresa de segurança Kaspersky revelou que o percentual de usuários brasileiros que tentaram abrir links enviados para roubar dados pelo menos uma vez representa 19,9% dos internautas do país. Em segundo lugar no ranking vem Portugal (19,7%), seguido da França (17,9%), Tunísia (17,6%), Camarões (17,3%) e Venezuela (16,8%).</p>
-               
-            </div>
-            <div class="col-2-1">
-                <img src="https://cdn.pixabay.com/photo/2018/08/18/13/27/browser-3614768_960_720.png">
-            </div>
-        </div>
-
-
     </div>
-</div>
 
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="https://cdn.pixabay.com/photo/2019/04/05/16/45/question-4105529_960_720.jpg" class="offer-img">
+                </div>
+                <div class="col-2">
+                   
+                    <h1>Nós Estamos Aqui para Ajudar!</h1>
+                    <small>Texto sobre SI</small>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 
-
+    <footer class="rodape">
+        <p>&copy; SI Domino's - Todos os direitos reservados</p>
+    </footer>
 </body>
 
 </html>
